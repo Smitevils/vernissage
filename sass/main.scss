@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+@import 'normalize';
+@import 'fonts';
+
+@mixin Transition-All-03s {
+	transition: all 0.3s;
+}
+
+@mixin Transition-All-06s {
+	transition: all 0.6s;
+}
+
+//* {outline: 1px yellowgreen dashed;}
+
+@keyframes widthTitle {
+	from {width: 0%;}
+	to {width: 100%;}
+}
+
+html {}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-weight: 400;
+	@include GothaPro;
+	//
+	a {color: #fff;}
+}
+
+.link-animation:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0; margin: 0 auto;
+	width: 0%; height: 1px;
+	@include Transition-All-03s;
+}
+.link-animation:hover:after {
+	width: 100%;
+}
+
+a {text-decoration: none;}
+
+header {
+	display: block;
+	margin-left: 20%;
+	margin-top: 10%;
+}
+
+.header-contacts {
+	padding: 0; list-style: none; margin-top: 40px; font-size: 18px;
+	//
+	a {color: #cccccc; position: relative;}
+	.link-animation:after {
+		background-color: #cccccc;
+	}
+	//
+	li {padding: 10px 0;}
+}
+
+.header-link {
+	margin-top: 40px; font-size: 14px;
+	//
+	a {color: #c7b27a; position: relative;}
+	.link-animation:after {
+		background-color: #c7b27a;
+	}
+}
+
+.full-page-cantainer {
+	min-height: 100vh;
+	max-height: 100vh;
+	overflow: hidden; font-size: 0; white-space: nowrap; word-wrap: normal;
+}
+
+.full-page__blocks {
+	display: inline-block; font-size: 14px; vertical-align: top;
+	min-height: 100vh;
+	max-height: 100vh;
+	position: relative;
+}
+
+.full-page__main-column {
+	width: 23%; margin-left: -8%;
+}
+
+.full-page__section-column {
+	width: 17%;
+	border-right: 4px solid #fff;
+}
+
+.full-page__last-column {
+	width: 26%;
+	//
+	.main-link-column__title {
+		padding-right: 40%;
+	}
+}
+
+.full-page__menu-column {
+	background-color: #000; position: relative; z-index: 10; overflow: hidden;
+	width: 26%;
+	@include Transition-All-03s;
+}
+.full-page__menu-column.open {
+	margin-left: -26%;
+}
+
+.full-page__bg-1 {
+	background: url(../img/bg/1.jpg) no-repeat center;
+	background-size: cover;
+}
+.full-page__bg-2 {
+	background: url(../img/bg/2.jpg) no-repeat center;
+	background-size: cover;
+}
+.full-page__bg-3 {
+	background: url(../img/bg/3.jpg) no-repeat center;
+	background-size: cover;
+}
+.full-page__bg-4 {
+	background: url(../img/bg/4.jpg) no-repeat center;
+	background-size: cover;
+}
+.full-page__bg-5 {
+	background: url(../img/bg/5.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.main-link-column {
+	display: block;
+	position: absolute; width: 100%; height: 100%;
+	background: url(../img/bg/gradient.png) no-repeat center;
+	background-size: 100% 100%;
+	@include Transition-All-06s;
+	//
+	&:hover {
+		background: url(../img/bg/gradient2.png) no-repeat center;
+		background-size: 100% 100%;
+	}
+	//
+	&:hover .main-link-column__title {
+		color: #c7b27a;
+		text-shadow: 0px 0px 1px black; /* Параметры тени */
+	}
+	&:hover .main-link-column__title:after {
+		animation: widthTitle 1s;
+		box-shadow: 0px 0px 1px black; /* Параметры тени */
+	}
+}
+
+.main-link-column__title {
+	position: absolute; bottom: 10%; right: 2%;
+	font-size: 24px;
+	padding-right: 20%; padding-bottom: 4px;
+	//border-bottom: 2px solid #c7b27a;
+	@include Transition-All-06s;
+}
+.main-link-column__title:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #c7b27a;
+	width: 100%; height: 2px;
+}
+
+.skew-right {
+	transform: skewX(-17deg);
+}
+
+.skew-left {
+	transform: skewX(17deg);
+}
+
+.logo {
+	width: 80%; height: auto; margin: 0 auto;
+}
+.wrap {}
+
+.menu-search-container {
+	position: absolute;
+	top: 40px; right: 40px;
+	z-index: 100;
+}
+
+.menu-btn {
+	display: inline-block;
+	width: 34px; height: 34px;
+	background-color: #fff;
+}
+
+.menu-content {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	margin-left: -40%;
+}
+
+.menu-rights {
+	display: inline-block;
+	position: absolute;
+	bottom: 40px; right: 40px;
+	//
+	a {
+		color: #999999;
+	}
+}
+
+nav.menu {
+	display: inline-block;
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	margin-top: -150px;
+	//
+	ul {
+		list-style: none; padding: 0; text-align: right;
+		//
+		li {
+			padding: 15px 0;
+			//
+			a {
+				color: #fff; font-size: 30px; font-weight: 400;
+			}
+			a:hover {
+				color: #999999;
+			}
+		}
+	}
+}

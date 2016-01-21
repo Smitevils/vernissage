@@ -1,0 +1,15 @@
+/* font-family: "ProximaNovaT-Thin"; */
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/Gotham/GothaProReg/GothamPro.eot");
+	src: url("../fonts/Gotham/GothaProReg/GothamPro.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Gotham/GothaProReg/GothamPro.woff") format("woff"),
+	url('../fonts/Gotham/GothaProReg/GothamPro.woff2') format('woff2'), 
+	url("../fonts/Gotham/GothaProReg/GothamPro.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin GothaPro {
+	font-family: 'GothaPro', GothaPro, sans-serif;
+}
