@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<!-- charset -->
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<!-- title -->
+	<title>Вернисаж М</title>
+	<!-- === Styles === -->
+	<!-- main.css -->
 	<link rel="stylesheet" href="assets/css/main.min.css">
+	<!-- mCustomScrollbar -->
 	<link rel="stylesheet" href="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fancybox -->
+	<link rel="stylesheet" href="assets/modules/fancybox/source/jquery.fancybox.css" />
+	<!-- lightGallery -->
+	<link type="text/css" rel="stylesheet" href="assets/modules/lightGallery-master/dist/css/lightgallery.css" /> 
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<div class="svg-sprites">
@@ -83,7 +109,7 @@
 						</li>
 					</ul>
 					<div class="header-link">
-						<a href="#" class="link-animation">Связаться с нами &#9656;</a>
+						<a href="#" class="link-animation popup-call">Связаться с нами &#9656;</a>
 					</div>
 					<div class="address">
 						<p>
@@ -103,19 +129,19 @@
 				<nav class="menu">
 					<ul>
 						<li>
-							<a href="#">Главная</a>
+							<a href="index.html">Главная</a>
 						</li>
 						<li>
-							<a href="#">О нас</a>
+							<a href="article.html">О нас</a>
 						</li>
 						<li>
-							<a href="#">Каталог</a>
+							<a href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a href="#">Портфолио</a>
+							<a href="catalog.html">Портфолио</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a href="contacts.html">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -126,10 +152,31 @@
 			</div>
 		</div>
 	</div>
-	<!-- Google Maps API -->
+	<!-- modals windows -->
+	<div class="call-modal" id="call-modal">
+		<form action="action.php" method="post">
+			<p>Оставьте заявку и мы свяжемся с Вами</p>
+			<p><input type="text" class="input-name" placeholder="Имя"></p>
+			<p><input type="text" class="input-phone" placeholder="Телефон"></p>
+			<p><input type="submit" value="Заказать обратный звонок"></p>
+		</form>
+	</div>
+	<!-- /modals windows -->
+	<!-- Google Maps API (для инициализации крты в main.js)-->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<!-- JQ -->
 	<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
+	<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<!-- lightgallery plugins -->
+	<script src="assets/modules/lightGallery-master/dist/js/lightgallery.js"></script>
+	<script src="assets/modules/lightGallery-master/dist/js/lg-thumbnail.js"></script>
+	<script src="assets/modules/lightGallery-master/dist/js/lg-fullscreen.min.js"></script>
+	<!-- Custom Scrollbar -->
 	<script type="text/javascript" src="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+	<!-- Fancybox -->
+	<script type="text/javascript" src="assets/modules/fancybox/source/jquery.fancybox.js"></script>
+	<!-- Main - our scripts -->
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

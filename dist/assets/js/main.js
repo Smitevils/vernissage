@@ -20,7 +20,9 @@ $('.open-search').click(function(event) {
 
 $(".main-article").mCustomScrollbar();
 $(".catalog-container").mCustomScrollbar();
-$(".galery-cathegory").mCustomScrollbar();
+$(".galery-cathegory").mCustomScrollbar(
+    { scrollbarPosition: "inside" }
+);
 
 /* карты */
 
@@ -243,6 +245,22 @@ if($('#map').length > 0){
 $('.ul-slide').click(function(e) {
 	//e.preventDefault();
 	$(this).toggleClass('open');
+});
+
+$('.popup-call').click(function(event) {
+	event.preventDefault();
+	/* Act on the event */
+	$.fancybox($('.call-modal'))
+});
+
+// galery
+
+$('.lightgallery').lightGallery();
+//$('#lightgallery').data('lightGallery').slide(2);
+
+$('.catalog-container__item').click(function(event) {
+    var galery = $(this).data('galery');
+    $('.lightgallery[data-galery="' + galery + '"] a').click();
 });
 
 });
