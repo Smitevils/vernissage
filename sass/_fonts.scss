@@ -10,6 +10,31 @@
 	font-weight: 400;
 }
 
+@font-face {
+	font-family: "GothaPro";
+	src: url("../fonts/Gotham/GothaProMed/GothamPro-Medium.eot");
+	src: url("../fonts/Gotham/GothaProMed/GothamPro-Medium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Gotham/GothaProMed/GothamPro-Medium.woff") format("woff"),
+	url('../fonts/Gotham/GothaProMed/GothamPro-Medium.woff2') format('woff2'), 
+	url("../fonts/Gotham/GothaProMed/GothamPro-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 600;
+}
+
 @mixin GothaPro {
 	font-family: 'GothaPro', GothaPro, sans-serif;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+p {
+  @include font-size(14px);
 }

@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="assets/css/main.min.css">
+	<link rel="stylesheet" href="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
 </head>
 <body>
+	//= svg-sprites.html
 	<div class="full-page-cantainer">
 		<!-- search and menu btns -->
 		<div class="menu-search-container">
-			<div class="menu-btn"></div>
+			<div class="menu-search">
+				<div class="menu-btn open-search">
+					<div class="svg-icon">
+						<svg viewBox="0 0 1 1">
+							<use xlink:href="#search"></use>
+						</svg>
+					</div>
+				</div>
+				<input type="text" class="input-search" placeholder="Поиск">
+			</div>
+			<div class="menu-btn open-menu">
+				<div class="svg-icon">
+					<svg viewBox="0 0 1 1">
+						<use xlink:href="#menu"></use>
+					</svg>
+				</div>
+			</div>
+			<div class="menu-btn close-menu">
+				<div class="svg-icon">
+					<svg viewBox="0 0 1 1">
+						<use xlink:href="#close"></use>
+					</svg>
+				</div>
+			</div>
 		</div>
 		<!-- /search and menu btns -->
 		<div class="full-page__blocks full-page__main-column skew-right">
@@ -83,10 +105,16 @@
 					</ul>
 				</nav>
 				<div class="menu-rights">
-					<a href="#">© 2015 Все права защищены</a>
+					<a href="#">© 2015 Все права защищены</a><br>
+					<a href="#">Разработка сайта - Skipo</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Google Maps API -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
