@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- charset -->
+	<meta charset="UTF-8">
+	<!-- title -->
+	<title>Вернисаж М</title>
+	<!-- === Styles === -->
+	<!-- main.css -->
+	<link rel="stylesheet" href="assets/css/main.min.css">
+	<!-- mCustomScrollbar -->
+	<link rel="stylesheet" href="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" />
+	<!-- fancybox -->
+	<link rel="stylesheet" href="assets/modules/fancybox/source/jquery.fancybox.css" />
+	<!-- lightGallery -->
+	<link type="text/css" rel="stylesheet" href="assets/modules/lightGallery-master/dist/css/lightgallery.css" /> 
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- view -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div class="svg-sprites">
+		<svg version="1.1" id="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+			<g>
+				<g>
+					<g>
+						<path d="M0,95.625v38.25h612v-38.25H0z M0,325.125h612v-38.25H0V325.125z M0,516.375h612v-38.25H0V516.375z"/>
+					</g>
+				</g>
+			</g>
+			<g>
+		</svg>
+		<svg version="1.1" id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 62.993 62.993" style="enable-background:new 0 0 62.993 62.993;" xml:space="preserve">
+			<g>
+				<path d="M62.58,60.594L41.313,39.329c3.712-4.18,5.988-9.66,5.988-15.677
+					c0-13.042-10.609-23.651-23.65-23.651C10.609,0.001,0,10.61,0,23.652c0,13.041,10.609,23.65,23.651,23.65
+					c6.016,0,11.497-2.276,15.677-5.988l21.265,21.267c0.273,0.273,0.634,0.411,0.993,0.411c0.36,0,0.721-0.138,0.994-0.411
+					C63.13,62.03,63.13,61.143,62.58,60.594z M23.651,44.492c-11.492,0-20.841-9.348-20.841-20.84S12.159,2.811,23.651,2.811
+					c11.491,0,20.84,9.349,20.84,20.841c0,5.241-1.958,10.023-5.163,13.689c-0.619,0.706-1.281,1.368-1.987,1.987
+					C33.675,42.534,28.892,44.492,23.651,44.492z"/>
+			</g>
+		</svg>
+		<svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 224.512 224.512" style="enable-background:new 0 0 224.512 224.512;" xml:space="preserve">
+		<g>
+			<polygon points="224.507,6.997 217.521,0 112.256,105.258 6.998,0 0.005,6.997 105.263,112.254 
+				0.005,217.512 6.998,224.512 112.256,119.24 217.521,224.512 224.507,217.512 119.249,112.254 	"/>
+		</g>
+		</svg>
+	</div>
+	<div class="full-page-cantainer straight">
+		<!-- search and menu btns -->
+		<div class="menu-search-container">
+			<div class="menu-search">
+				<div class="menu-btn open-search">
+					<div class="svg-icon">
+						<svg viewBox="0 0 1 1">
+							<use xlink:href="#search"></use>
+						</svg>
+					</div>
+				</div>
+				<input type="text" class="input-search" placeholder="Поиск">
+			</div>
+			<div class="menu-btn open-menu">
+				<div class="svg-icon">
+					<svg viewBox="0 0 1 1">
+						<use xlink:href="#menu"></use>
+					</svg>
+				</div>
+			</div>
+			<div class="menu-btn close-menu">
+				<div class="svg-icon">
+					<svg viewBox="0 0 1 1">
+						<use xlink:href="#close"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- /search and menu btns -->
+		<div class="full-page__blocks full-page__main-column skew-right">
+			<div class="skew-left">
+				<header>
+					<div class="wrap">
+						<a href="index.html">
+							<img src="assets/img/logo/logo.png" class="logo" alt="logo">
+						</a>
+					</div>
+					<ul class="header-contacts">
+						<li>
+							<a href="tel:+74952224342" class="link-animation">+7 (495) 222 43 42</a>
+						</li>
+						<li>
+							<a href="mailto:info@vernisazh-m.ru" class="link-animation">info@vernisazh-m.ru</a>
+						</li>
+					</ul>
+					<div class="header-link">
+						<a href="#" class="link-animation popup-call">Связаться с нами &#9656;</a>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="full-page__blocks full-page__section-article skew-right">
+			<div class="catalog-wrap">
+				<div class="catalog-container">
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<a href="#" class="catalog-container__item" data-galery="1">
+						<img src="http://galereyamebliv.com/_si/1/08151667.jpg" alt="img">
+						<div class="catalog-container__item__text">
+							Коллекция<br>
+							The Limited<br><br>
+							2015
+						</div>
+					</a>
+					<!-- galery -->
+					<div class="galery-hide">
+						<div class="lightgallery" data-galery="1">
+							<a href="http://galereyamebliv.com/_si/1/08151667.jpg">
+								<img src="http://galereyamebliv.com/_si/1/08151667.jpg" />
+							</a>
+							<a href="http://galereyamebliv.com/_si/1/08151667.jpg">
+								<img src="http://galereyamebliv.com/_si/1/08151667.jpg" />
+							</a>
+						</div>
+						<!--  -->
+						<div class="lightgallery" data-galery="2">
+							<a href="http://galereyamebliv.com/_si/1/08151667.jpg">
+								<img src="http://galereyamebliv.com/_si/1/08151667.jpg" />
+							</a>
+							<a href="http://galereyamebliv.com/_si/1/08151667.jpg">
+								<img src="http://galereyamebliv.com/_si/1/08151667.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="full-page__blocks full-page__menu-column skew-right">
+			<div class="menu-content skew-left">
+				<nav class="menu">
+					<ul>
+						<li>
+							<a href="index.html">Главная</a>
+						</li>
+						<li>
+							<a href="article.html">О нас</a>
+						</li>
+						<li>
+							<a href="catalog.html">Каталог</a>
+						</li>
+						<li>
+							<a href="portfolio.html">Портфолио</a>
+						</li>
+						<li>
+							<a href="contacts.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu-rights">
+					<a href="#">© 2015 Все права защищены</a><br>
+					<a href="https://skipodevelop.ru/" target="_blank">Разработка сайта - Skipo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modals windows -->
+	<div class="call-modal" id="call-modal">
+		<form action="action.php" method="post">
+			<p>Оставьте заявку и мы свяжемся с Вами</p>
+			<p><input type="text" class="input-name" placeholder="Имя"></p>
+			<p><input type="text" class="input-phone" placeholder="Телефон"></p>
+			<p><input type="submit" value="Заказать обратный звонок"></p>
+		</form>
+	</div>
+	<!-- /modals windows -->
+	<!-- Google Maps API (для инициализации крты в main.js)-->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<!-- JQ -->
+	<script type="text/javascript" src="assets/js/jquery-2.2.0.min.js"></script>
+	<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+	<script type="text/javascript" src="assets/js/jquery.mousewheel.min.js"></script>
+	<!-- lightgallery plugins -->
+	<script src="assets/modules/lightGallery-master/dist/js/lightgallery.js"></script>
+	<script src="assets/modules/lightGallery-master/dist/js/lg-thumbnail.js"></script>
+	<script src="assets/modules/lightGallery-master/dist/js/lg-fullscreen.min.js"></script>
+	<!-- Custom Scrollbar -->
+	<script type="text/javascript" src="assets/modules/malihu-custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+	<!-- Fancybox -->
+	<script type="text/javascript" src="assets/modules/fancybox/source/jquery.fancybox.js"></script>
+	<!-- mask -->
+	<script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+	<!-- Main - our scripts -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

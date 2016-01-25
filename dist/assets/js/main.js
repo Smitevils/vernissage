@@ -34,7 +34,7 @@ if($('#map').length > 0){
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 17,
-                    scrollwheel: false,
+                    scrollwheel: true,
                     navigationControl: false,
 		            mapTypeControl: false,
 		            scaleControl: false,
@@ -262,5 +262,7 @@ $('.catalog-container__item').click(function(event) {
     var galery = $(this).data('galery');
     $('.lightgallery[data-galery="' + galery + '"] a').click();
 });
+
+$('.input-phone').mask('+7 (000) 000-00-00');
 
 });
