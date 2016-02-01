@@ -287,7 +287,21 @@ $('.catalog-container__item').click(function(event) {
           centerMode: false,
           focusOnSelect: true,
           prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;"></button>',
-          nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;"></button>'
+          nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;"></button>',
+          responsive: [
+            {
+              breakpoint: 760,
+              settings: {
+                slidesToShow: 1,
+                asNavFor: '.design-galery[data-galery="' + galery + '"] .slider-for',
+                  dots: false,
+                  centerMode: false,
+                  focusOnSelect: true,
+                  prevArrow: '<button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;"></button>',
+                  nextArrow: '<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;"></button>'
+                    }
+                }
+            ]
         });
 
         };
