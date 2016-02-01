@@ -29,6 +29,8 @@ h1,h2,h3,h4,h5,h6 {
 	color: #c7b27a;
 }
 
+
+
 body {
 	background-color: #333;
 	color: #fff;
@@ -314,6 +316,9 @@ nav.menu {
 	max-height: 60%;
 	top: 0; bottom: 0; left: 12%;  margin: auto;
 	white-space: normal; word-wrap: normal;
+	//
+	p {@include font-size(16px); line-height: 20px;}
+	ol, ul {@include font-size(16px);}
 }
 .contacts__map {
 	display: block;
